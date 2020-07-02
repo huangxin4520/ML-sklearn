@@ -1,4 +1,4 @@
-1. [AdaBoost是什么](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost#1adaBoost是什么)
+1. [AdaBoost是什么](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#1adaBoost是什么)
       1. [AdaBoost的定义](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#1.1AdaBoost的定义)
       2. [AdaBoost的步骤](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#1.2AdaBoost的步骤)
       3. [AdaBoost的具体案例](#1.3AdaBoost具体案例)
