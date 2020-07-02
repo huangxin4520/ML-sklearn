@@ -35,8 +35,7 @@ a
 - 采样出子集，用子集训练ht。
 
 - 计算hi的错误率：
-![1](http://latex.codecogs.com/svg.latex?\int_a^bf(x)\ dx)
-   <img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\\\\neq y_i]D_t}}{N_t}" style="border:none;">
+   <img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neqy_i]D_t}}{N_t}" style="border:none;">
 
 - 计算基分类器的权重：
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=a_t=log\frac{(1-\varepsilon_t)}{\varepsilon_t}" style="border:none;">
