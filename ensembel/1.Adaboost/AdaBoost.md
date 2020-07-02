@@ -1,13 +1,13 @@
 1. [AdaBoost是什么](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#1adaBoost是什么)
       1. [AdaBoost的定义](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#11adaBoost的定义)
       2. [AdaBoost的步骤](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#12adaBoost的步骤)
-      3. [AdaBoost的具体案例](#1.3AdaBoost具体案例)
-      4. [AdaBoost的两种权重](#1.4AdaBoost的两种权重)
-      5. [AdaBoost的优缺点](#1.5AdaBoost的优缺点)
+      3. [AdaBoost的具体案例](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#13adaBoost具体案例)
+      4. [AdaBoost的两种权重](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#14adaBoost的两种权重)
+      5. [AdaBoost的优缺点](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#15adaBoost的优缺点)
 a
-2. [sklearn里面的参数含义](#2.sklearn里面的参数含义)
-3. [代码实现](#3.代码实现)
-4. [参考文献](#4.参考文献)
+2. [sklearn里面的参数含义](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#2sklearn里面的参数含义)
+3. [代码实现](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#3代码实现)
+4. [参考文献](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#4参考文献)
 
 
 
@@ -35,7 +35,7 @@ a
 - 采样出子集，用子集训练ht。
 
 - 计算hi的错误率：
-  $$ \varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t} $$
+   \varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}
 
 - 计算基分类器的权重：
 
@@ -113,7 +113,7 @@ $$
 
 | 参数                    | 默认           |                                                              |
 | ----------------------- | -------------- | ------------------------------------------------------------ |
-| **base_estimator **     | 默认=None      | 基分类器模型，一般是决策树模型。如果是None，则基本估计量为DecisionTreeClassifier(max_depth=1)。 |
+| **base_estimator**     | 默认=None      | 基分类器模型，一般是决策树模型。如果是None，则基本估计量为DecisionTreeClassifier(max_depth=1)。 |
 | **n_estimators int**    | 默认= 50       | 终止增强的估计器的最大数量。                                 |
 | **learning_rate float** | 默认= 1        | learning_rate和 之间需要权衡n_estimators。                   |
 | **algorithm**           | 默认='SAMME.R' | **取值为{'SAMME'，'SAMME.R'}**如果为“ SAMME.R”，则使用SAMME.R真正的增强算法。 base_estimator必须支持类概率的计算。如果为“ SAMME”，则使用SAMME离散提升算法。SAMME.R算法通常比SAMME收敛更快，从而以更少的提升迭代次数实现了更低的测试误差。 |
