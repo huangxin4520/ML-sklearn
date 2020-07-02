@@ -39,7 +39,7 @@ a
 - 采样出子集，用子集训练ht。
 
 - 计算hi的错误率：
-   <img src="http://chart.googleapis.com/chart?cht=tx&chl=f_{0}" style="border:none;">
+   <img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}" style="border:none;">
  $\varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}$
 
 - 计算基分类器的权重：
