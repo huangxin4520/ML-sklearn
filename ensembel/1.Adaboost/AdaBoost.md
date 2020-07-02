@@ -35,11 +35,11 @@ a
 - 采样出子集，用子集训练ht。
 
 - 计算hi的错误率：
-   \varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}
+   $\varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}$
 
 - 计算基分类器的权重：
 
-$$
+$
 a_t=log\frac{(1-\varepsilon_t)}{\varepsilon_t}
 $$
 
