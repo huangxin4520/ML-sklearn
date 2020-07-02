@@ -35,9 +35,7 @@
 - 采样出子集，用子集训练ht。
 
 - 计算hi的错误率：
-  $$
-  \varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}
-  $$
+  $$ \varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t} $$
 
 - 计算基分类器的权重：
 
@@ -119,7 +117,7 @@ $$
 | **n_estimators int**    | 默认= 50       | 终止增强的估计器的最大数量。                                 |
 | **learning_rate float** | 默认= 1        | learning_rate和 之间需要权衡n_estimators。                   |
 | **algorithm**           | 默认='SAMME.R' | **取值为{'SAMME'，'SAMME.R'}**如果为“ SAMME.R”，则使用SAMME.R真正的增强算法。 base_estimator必须支持类概率的计算。如果为“ SAMME”，则使用SAMME离散提升算法。SAMME.R算法通常比SAMME收敛更快，从而以更少的提升迭代次数实现了更低的测试误差。 |
-| **random_state **       | 默认=None      | 随机种子                                                     |
+| **random_state**       | 默认=None      | 随机种子                                                     |
 
 #### **3.代码实现**
 
