@@ -40,19 +40,12 @@ a
 
 - 计算hi的错误率：
    <img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}" style="border:none;">
- $\varepsilon_t=\frac{\sum_{i=1}^{N_t}{I[h_t(x_i)\neq y_i]D_t}}{N_t}$
 
 - 计算基分类器的权重：
-
-$
-a_t=log\frac{(1-\varepsilon_t)}{\varepsilon_t}
-$$
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=a_t=log\frac{(1-\varepsilon_t)}{\varepsilon_t}" style="border:none;">
 
 - 设置下一次采样的权重：
-  $$
-  D（t+1)=\begin{cases} \frac{D_t(i)（1-\varepsilon_t)}{\varepsilon_t}，h_t(x_i)\neq y_i\\ \frac{D_t(i)（\varepsilon_t)}{1-\varepsilon_t}， h_t(x_i)= y_i\end{cases}
-  $$
-  
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=D（t+1)=\begin{cases} \frac{D_t(i)（1-\varepsilon_t)}{\varepsilon_t}，h_t(x_i)\neq y_i\\ \frac{D_t(i)（\varepsilon_t)}{1-\varepsilon_t}， h_t(x_i)= y_i\end{cases}" style="border:none;">
 
 **（3）最后，将各个训练得到的弱分类器组合成一个强分类器。**
 
