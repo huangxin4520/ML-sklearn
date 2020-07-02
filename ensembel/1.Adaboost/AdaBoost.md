@@ -1,3 +1,7 @@
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 1. [AdaBoost是什么](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#1adaBoost是什么)
       1. [AdaBoost的定义](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#11adaBoost的定义)
       2. [AdaBoost的步骤](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#12adaBoost的步骤)
