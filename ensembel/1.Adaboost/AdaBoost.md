@@ -35,20 +35,13 @@ a
 - 采样出子集，用子集训练ht。
 
 - 计算hi的错误率：![img](https://pic2.zhimg.com/v2-d581fd531d79826da8311a295ef2b689_b)
-- 计算基分类器的权重：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=a_t=log\frac{(1-\varepsilon_t)}{\varepsilon_t}" style="border:none;">
-
-- 设置下一次采样的权重：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=D（t+1)=(\begin{cases} \frac{D_t(i)（1-\varepsilon_t)}{\varepsilon_t}，h_t(x_i)\neq y_i\\ \frac{D_t(i)（\varepsilon_t)}{1-\varepsilon_t}，h_t(x_i)= y_i\end{cases})" style="border:none;">
-
+- 计算基分类器的权重：![img](https://pic2.zhimg.com/v2-69224981c4ceb3d615b2eb96db085781_b)
+- 设置下一次采样的权重：![img](https://pic2.zhimg.com/v2-fddc4c0c03c6eb1bc79d37dad8015811_b)
 **（3）最后，将各个训练得到的弱分类器组合成一个强分类器。**
 
 ​		各个弱分类器的训练过程结束后，加大分类误差率小的弱分类器的权重，使其在最终的分类函数中起着较大的决定作用，而降低分类误差率大的弱分类器的权重，使其在最终的分类函数中起着较小的决定作用。
 换而言之，**误差率低的弱分类器在最终分类器中占的权重较大，否则较小。**
-$$
-sign(\sum_{t=1}^{T}h_t(z)a_t)
-$$
-
+![img](https://pic3.zhimg.com/v2-3a25bc7bef4191ff4ed65209edee3a8a_b.png)
 
 ##### **1.3AdaBoost具体案例**
 
@@ -64,9 +57,7 @@ $$
 - 从上述过程中可以发现，如果某些个样本被分错，它们在下一轮迭代中的权值将被增大，同时，其它被分对的样本在下一轮迭代中的权值将被减小**。就这样，分错样本权值增大，分对样本权值变小，而在下一轮迭代中，总是选取让误差率最低的阈值来设计基本分类器，所以误差率e（所有被Gm(x)误分类样本的权值之和）不断降低。**
 
 综上，将上面计算得到的a1、a2、a3各值代入G(x)中，G(x) = sign[f3(x)] = sign[ a1 * G1(x) + a2 * G2(x) + a3 * G3(x) ]，得到最终的分类器为：
-$$
 G(x) = sign[f3(x)] = sign[ 0.4236G1(x) + 0.6496G2(x)+0.7514G3(x) ]。
-$$
 
 
 ##### **1.4AdaBoost的两种权重**
