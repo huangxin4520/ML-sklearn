@@ -1,7 +1,3 @@
-<script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
 1. [AdaBoost是什么](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#1adaBoost是什么)
       1. [AdaBoost的定义](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#11adaBoost的定义)
       2. [AdaBoost的步骤](https://github.com/huangxin4520/ML-sklearn/blob/master/ensembel/1.Adaboost/AdaBoost.md#12adaBoost的步骤)
@@ -45,7 +41,7 @@ a
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=a_t=log\frac{(1-\varepsilon_t)}{\varepsilon_t}" style="border:none;">
 
 - 设置下一次采样的权重：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=D（t+1)=\begin{cases} \frac{D_t(i)（1-\varepsilon_t)}{\varepsilon_t}，h_t(x_i)\neq y_i\\ \frac{D_t(i)（\varepsilon_t)}{1-\varepsilon_t}， h_t(x_i)= y_i\end{cases}" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=D（t+1)=(\begin{cases} \frac{D_t(i)（1-\varepsilon_t)}{\varepsilon_t}，h_t(x_i)\neq y_i\\ \frac{D_t(i)（\varepsilon_t)}{1-\varepsilon_t}，h_t(x_i)= y_i\end{cases})" style="border:none;">
 
 **（3）最后，将各个训练得到的弱分类器组合成一个强分类器。**
 
