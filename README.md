@@ -15,4 +15,7 @@
 | 集成学习 | XGBoost                                                      |
 | 集成学习 | LightGBM                                                     |
 | 集成学习 | CatBoost                                                     |
-
+| 经典算法 | SVM                                                          |
+| 经典算法 | LR                                                           |
+| 经典算法 | DT                                                           |
+| 非监督   | kmean                                                        |
