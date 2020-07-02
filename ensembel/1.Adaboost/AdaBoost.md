@@ -34,7 +34,7 @@ a
 
 - 采样出子集，用子集训练ht。
 
-- 计算hi的错误率：https://pic2.zhimg.com/v2-d581fd531d79826da8311a295ef2b689_b.jpg
+- 计算hi的错误率：![img](https://pic2.zhimg.com/v2-d581fd531d79826da8311a295ef2b689_b.jpg)
 - 计算基分类器的权重：
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\varepsilon_t=a_t=log\frac{(1-\varepsilon_t)}{\varepsilon_t}" style="border:none;">
 
